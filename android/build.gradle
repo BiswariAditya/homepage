@@ -1,16 +1,14 @@
 buildscript {
-    ext.kotlin_version = '1.9.10' // Define the Kotlin version here
+    ext.kotlin_version = '1.9.31' // Update to a compatible Kotlin version
 
     repositories {
         google()
         mavenCentral()
     }
-    dependencies {
-        // Include the Kotlin Gradle plugin with the specified version
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
 }
-
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
 allprojects {
     repositories {
         google()
